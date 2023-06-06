@@ -1,3 +1,4 @@
+import "./BookShow.css";
 import { useState } from "react";
 function BookShow({key,books,onDelete}) {
     const onDeleteHandle=()=>{

@@ -1,3 +1,4 @@
+import "./CreateBooks.css";
 import { useState } from "react";
 function CreateBooks({onCreate}) {
     const [title,settitle]=useState("");
@@ -14,7 +15,7 @@ function CreateBooks({onCreate}) {
         <h3>Add BooK</h3>
         <form onSubmit={handleFormSubmit} className="createForm">
             <label>Title : </label>
-            <input value={title} onChange={handleChange} type="text"/>
+            <input className="createip" value={title} onChange={handleChange} type="text"/>
         <button className="createBtn">Submit</button>
         </form>
     </div>

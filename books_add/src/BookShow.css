@@ -1,0 +1,31 @@
+.btnbar{
+    height:30px;
+    position: absolute; 
+    right:0;
+}
+.bookShow{
+    background-color: gray;
+    width:200px;
+}
+.imgBookShow{
+    
+}
+.bookShow h3{
+    text-align: center;
+    color:rgb(5, 203, 237);
+    font-size: 1.5rem;
+    background-color: gray;
+}
+.imgBookShow{
+    width:200px;
+}
+.bookShow{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-content: center;
+    border:2px solid gray;
+    border-radius: 6px;
+    margin:10px;
+}

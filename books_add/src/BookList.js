@@ -1,3 +1,4 @@
+import "./BookList.css";
 import BookShow from "./BookShow.js";
 function BookList({books,onDelete}) {
     const renderBooks=books.map((books,index)=>{

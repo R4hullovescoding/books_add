@@ -1,0 +1,31 @@
+.createBookMain{
+    text-align: center;
+    
+}
+.createBookMain h3{
+    font-size: 2rem;
+    color:rgb(0, 191, 255);
+}
+.createBookMain form{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.createBookMain .createip{
+    height:50px;
+    width:400px;
+    background-color: rgb(155, 150, 150);
+    color:rgb(0, 0, 0);
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+.createBookMain button{
+    display: block;
+    margin:auto;
+    margin-top:20px;
+    font-size:1.2rem;
+    width:100px;
+    height:40px;
+    background-color: rgb(29, 189, 29);
+    border-radius: 3px;
+    /* text-align: center; */
+}
