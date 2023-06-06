@@ -1,11 +1,11 @@
-function createBook({onCreateBook}){
+function CreateBook({createBook}){
     const [title,settitle]=useState("");
     const handleChange=(event)=>{
         settitle(event.target.value);
     }
     const handleFormSubmit=(event)=>{
         event.preventDefault();
-        onCreateBook(title);
+        createBook(title);
         settitle("");
     }
     return (
@@ -19,4 +19,4 @@ function createBook({onCreateBook}){
         </div>
     );
 }
-export default createBook;
+export default CreateBook;

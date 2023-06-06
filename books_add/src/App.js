@@ -1,4 +1,5 @@
 import {useState} from "react";
+import CreateBook from "./CreateBook.js";
 function App(){
     const [books,setBooks]=useState();
     const onCreateBook=({title})=>{
@@ -6,7 +7,7 @@ function App(){
         setBooks(updatebook);
     };
     return (<div>
-       <createBook createBook={onCreateBook}/>
+       <CreateBook createBook={onCreateBook}/>
     </div>);
 }
 export default App;
