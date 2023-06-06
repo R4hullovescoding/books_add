@@ -13,21 +13,18 @@ function App(){
         });
         setbooks(updatebooks);
     };
-    // const handleEdit=async (id,newtitle)=>{
-    //     const editrq=await axios.put(`http://localhost:3005/books/${id}`,{
-    //         title:newtitle,
-    //     });
-    //     const updatebook=books.map((book,index)=>{
-    //         if(book.id===id){
-    //             return {...books,...editrq.data};
-    //         }
-    //         return book;
-    //     });
-    //     setbook(updatebook);
-    // };
+    const onBookEdit=(id,newtitle)=>{
+        const updatebook=books.map((book,index)=>{
+            if(book.id===id){
+                return {...books,title:newtitle};
+            }
+            return book;
+        });
+        setbooks(updatebook);
+    };
     return (<div>
         <CreateBooks onCreate={onCreateBook} />
-        <BookList books={books} onDelete={onBookDelete}/>
+        <BookList books={books} onDelete={onBookDelete} onEdit={onBookEdit}/>
     </div>);
 }
 export default App;

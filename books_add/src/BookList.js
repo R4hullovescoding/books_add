@@ -1,8 +1,8 @@
 import "./BookList.css";
 import BookShow from "./BookShow.js";
-function BookList({books,onDelete}) {
+function BookList({books,onDelete,onEdit}) {
     const renderBooks=books.map((books,index)=>{
-        return (<BookShow key={books.id} books={books} onDelete={onDelete}/>);
+        return (<BookShow key={books.id} books={books} onDelete={onDelete} onEdit={onEdit}/>);
     });
     return (
         <div className="mainBookEdit">
