@@ -1,13 +1,16 @@
 import "./CreateBooks.css";
 import { useState } from "react";
-function CreateBooks({onCreate}) {
+import { useContext } from "react";
+import BooksContext from "./Books";
+function CreateBooks() {
+    const {onCreateBook}=useContext(BooksContext);
     const [title,settitle]=useState("");
     const handleChange=(event)=>{
         settitle(event.target.value);
     }
     const handleFormSubmit=(event)=>{
         event.preventDefault();
-        onCreate(title);
+        onCreateBook(title);
         settitle("");
     }
     return (

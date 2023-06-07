@@ -1,20 +1,20 @@
 import "./BookShow.css";
+import BooksContext from "./Books";
 import BooksEdit from "./BooksEdit.js";
-import { useState } from "react";
-function BookShow({key,books,onDelete,onEdit}) {
+import { useContext, useState } from "react";
+function BookShow({key,books}) {
+    const {onBookDelete}=useContext(BooksContext);
     const [openform,setform]=useState(false);
     let content=books.title;
     const onDeleteHandle=()=>{
-        onDelete(books.id);
+        onBookDelete(books.id);
     };
     const onEditHandle=()=>{
         setform(!openform);
     };
-    const onChangeForm=(id,txt)=>{
+    const onChangeForm=()=>{
         // console.log("bookshow",txt);
-        onEdit(id,txt);
         setform(false);
-        content=txt;
     }
     if(openform) content=<BooksEdit  books={books} onSubmit={onChangeForm}/>
     return (
