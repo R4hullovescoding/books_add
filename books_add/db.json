@@ -1,24 +1,16 @@
 {
   "books": [
     {
-      "title": "Hello 2",
+      "title": "The way of water",
       "id": 1
     },
     {
-      "title": "Interview Experience",
+      "title": "The dead that walks",
+      "id": 2
+    },
+    {
+      "title": "The village of ...",
       "id": 3
-    },
-    {
-      "title": "The Way of Water",
-      "id": 4
-    },
-    {
-      "title": "angle of darkness",
-      "id": 5
-    },
-    {
-      "title": "Reality",
-      "id": 6
     }
   ]
 }

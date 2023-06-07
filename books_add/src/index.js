@@ -6,7 +6,7 @@ import {Provider} from "./Books.js";
 const el=document.querySelector("#root");
 const root=ReactDom.createRoot(el);
 root.render(
-<BooksContext.Provider>
+<Provider>
     <App />
-</BooksContext.Provider>
+</Provider>
 );
